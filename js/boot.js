@@ -1,4 +1,4 @@
-;(function( document, undefined ) {
+;(function( doc, undefined ) {
   'use strict';
 
   var $scriptDefault = doc.querySelector( '[data-js="script-default"]' );
