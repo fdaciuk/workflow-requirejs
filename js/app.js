@@ -1,14 +1,14 @@
 define([ 'jquery' ], function( $ ) {
   'use strict';
 
-  var App = (function() {
+  var app = function() {
     var $public = {};
     var $private = {};
 
     $private.projectPaths = {};
 
     $public.init = function init() {
-      console.log( 'carregou App.js' );
+      console.log( 'carregou app.js' );
       $private.loadPageScripts();
     };
 
@@ -23,11 +23,11 @@ define([ 'jquery' ], function( $ ) {
 
     $private.loadPageScripts = function loadPageScripts() {
       // Scripts para todas as páginas
-      $private.initModule( 'controllers/CommonController' );
+      $private.initModule( 'controllers/commonController' );
 
       // Exemplo de carregamento para a Home
       // if( $( '[data-js="page-home"]' )[0] ) {
-      //     $private.initModule( 'controllers/HomeController' );
+      //     $private.initModule( 'controllers/homeController' );
       // }
     };
 
@@ -38,7 +38,7 @@ define([ 'jquery' ], function( $ ) {
     };
 
     return $public;
-  })(); // App
+  };
 
-  return App;
+  return app();
 });

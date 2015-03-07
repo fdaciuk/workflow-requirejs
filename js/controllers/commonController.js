@@ -1,12 +1,12 @@
 define([ 'jquery' ], function( $ ) {
   'use strict';
 
-  var ControllerCommon = (function() {
+  var controllerCommon = function() {
     var $public = {};
     var $private = {};
 
     $public.init = function init() {
-      console.log( 'carregou ControllerCommon.js' );
+      console.log( 'carregou controllerCommon.js' );
       $private.initEvents();
     };
 
@@ -17,7 +17,7 @@ define([ 'jquery' ], function( $ ) {
     };
 
     return $public;
-  })();
+  };
 
-  return ControllerCommon;
+  return controllerCommon();
 });

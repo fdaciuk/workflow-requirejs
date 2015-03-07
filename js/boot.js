@@ -16,9 +16,9 @@
   });
 
   require([ 'jquery', 'remove-console-log' ], function( $ ) {
-    require([ 'App' ], function( App ) {
+    require([ 'app' ], function( app ) {
       $(function() {
-        App
+        app
           .setPath( 'BASE_URL', BASE_URL )
           .init();
       });
