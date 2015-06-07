@@ -14,7 +14,6 @@
 })(this, function() {
   'use strict';
 
-  // Remover os console.log do site ao colocar em produção
   var inProduction = ( window.location.hostname.indexOf( 'urldoseusite.com.br' ) > -1 );
   var inDevMode = ( '?development' === window.location.search );
   var inProductionAndNotDevMode = inProduction && ! inDevMode;
